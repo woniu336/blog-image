@@ -1,0 +1,33 @@
+{
+  "picBed": {
+    "github-A": {
+      "alias": "github-A",
+      "token": "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",
+      "githubUsername": "woniu336",
+      "proxy": "",
+      "paging": false,
+      "customUrl": "https://gcore.jsdelivr.net/gh/woniu336/blog-image@main",
+      "picBedName": "github"
+    },
+    "s3plist-A": {
+      "alias": "s3plist-A",
+      "accessKeyId": "c44c6b76fd0cef4b9e939edc3ff313ff",
+      "secretAccessKey": "bc0edc2f131d09bf592ee72b0ad95b5f308612b5b018ca07051f7c973e046e30",
+      "endpoint": "https://9f623b740b21465e05dfd016b92ecfa5.r2.cloudflarestorage.com",
+      "sslEnabled": true,
+      "s3ForcePathStyle": false,
+      "proxy": "",
+      "aclForUpload": "public-read",
+      "bucketName": "xunlu",
+      "baseDir": "/",
+      "paging": false,
+      "itemsPerPage": 50,
+      "picBedName": "s3plist",
+      "transformedConfig": "{\"xunlu\":{\"baseDir\":\"/\",\"area\":\"\",\"customUrl\":\"https://r2.jimugou.com\",\"operator\":\"\",\"password\":\"\"}}"
+    }
+  },
+  "settings": {
+    "isShowList": true
+  },
+  "currentPicBed": "placeholder"
+}
