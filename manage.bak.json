@@ -1,0 +1,17 @@
+{
+  "picBed": {
+    "github-A": {
+      "alias": "github-A",
+      "token": "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",
+      "githubUsername": "woniu336",
+      "proxy": "",
+      "paging": false,
+      "customUrl": "https://gcore.jsdelivr.net/gh/woniu336/blog-image@main",
+      "picBedName": "github"
+    }
+  },
+  "settings": {
+    "isShowList": true
+  },
+  "currentPicBed": "placeholder"
+}
