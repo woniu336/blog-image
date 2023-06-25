@@ -17,16 +17,22 @@
 
 ## 注意事项
 
+<br>
+
+请替换为你自己的`仓库名` 以及准备好`token`
 
 <br>
 
-仓库名: `woniu336/blog-image`
+> - 仓库名: `woniu336/blog-image`
 
-分支: main  (或者其他分支)
+> - 分支: main  (或者其他分支)
 
-存储路径: `img/`    (后面加`/` )
+> - 存储路径: `img/`    (后面加`/` )
 
-自定义域名: https://gcore.jsdelivr.net/gh/woniu336/blog-image@main
+> - 自定义域名: https://gcore.jsdelivr.net/gh/woniu336/blog-image@main
+
+<br>
+
 
 自定义域名`写法`: https://gcore.jsdelivr.net/gh/仓库名@main
 
