@@ -34,7 +34,10 @@
 <br>
 
 
-自定义域名`写法`: https://gcore.jsdelivr.net/gh/仓库名@main
+仓库名格式: `用户名/仓库名`
+
+
+自定义域名格式: https://gcore.jsdelivr.net/gh/用户名/仓库名@main
 
 <br>
 
