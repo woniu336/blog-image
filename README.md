@@ -13,9 +13,15 @@
 
 官网: https://piclist.cn
 
-
 <br>
-
+## 注意事项
+<br>
+分支: main  (或者其他分支)
+<br>
+存储路径: img/  (后面加/)
+<br>
+自定义域名: https://gcore.jsdelivr.net/gh/`woniu336/blog-image` @main
+<br>
 ![](https://gcore.jsdelivr.net/gh/woniu336/blog-image@main/img/Snipaste_2023-06-26_00-20-02.webp)
 
 
