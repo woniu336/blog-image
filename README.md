@@ -25,9 +25,9 @@
 
 > - 仓库名: `woniu336/blog-image`
 
-> - 分支: main  (或者其他分支)
+> - 分支: `main`
 
-> - 存储路径: `img/`    (后面加`/` )
+> - 存储路径: `img/`   
 
 > - 自定义域名: https://gcore.jsdelivr.net/gh/woniu336/blog-image@main
 
