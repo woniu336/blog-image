@@ -29,7 +29,7 @@
 
 
 
-![](https://gcore.jsdelivr.net/gh/woniu336/blog-image@main/img/Snipaste_2023-06-26_00-20-02.webp.webp)
+![](https://gcore.jsdelivr.net/gh/woniu336/blog-image@main/img/Snipaste_2023-06-26_00-20-02.webp)
 
 
 
