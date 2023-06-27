@@ -29,7 +29,7 @@
 
 > - 存储路径: `img/`   
 
-> - 自定义域名: https://gcore.jsdelivr.net/gh/woniu336/blog-image@main
+> - 自定义域名: https://cdn.bilicdn.tk/gh/woniu336/blog-image@main
 
 <br>
 
@@ -37,11 +37,11 @@
 仓库名格式: `用户名/仓库名`
 
 
-自定义域名格式: https://gcore.jsdelivr.net/gh/用户名/仓库名@main
+自定义域名格式: https://cdn.bilicdn.tk/gh/gh/用户名/仓库名@main
 
 <br>
 
-![](https://gcore.jsdelivr.net/gh/woniu336/blog-image@main/img/Snipaste_2023-06-26_00-20-02.webp)
+![](https://cdn.bilicdn.tk/gh/woniu336/blog-image@main/img/202306271738029.webp)
 
 
 
