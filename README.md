@@ -1,6 +1,6 @@
 # Github图床
 
-测试
+测试77
 
 配合图床工具: [PicList](https://github.com/Kuingsmile/PicList)
 
