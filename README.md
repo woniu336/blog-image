@@ -1,4 +1,4 @@
-# Github图床用法
+# Github图床
 
 
 
