@@ -24,6 +24,7 @@ on:
       - '**.jpg'
       - '**.jpeg'
       - '**.gif'
+      - '**.webp'  # 添加 .webp 格式的图片触发条件
 
 jobs:
   upload:
@@ -46,7 +47,7 @@ jobs:
 
     - name: Upload images to sm.ms
       run: |
-        for file in $(find . -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.gif" \)); do
+        for file in $(find . -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.gif" -o -name "*.webp" \)); do
           response=$(curl -s -H "Authorization: $SMMS_API_TOKEN" -F "smfile=@$file" https://sm.ms/api/v2/upload)
           url=$(echo $response | jq -r '.data.url')
           echo "Uploaded $file to $url"
