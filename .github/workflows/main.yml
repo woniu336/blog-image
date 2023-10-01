@@ -1,15 +1,55 @@
 # 同步到Backblaze B2 
-name: Sync B2 Bucket
-on: push
+# name: Sync B2 Bucket
+# on: push
+
+# jobs:
+  # deploy:
+    # runs-on: ubuntu-latest
+    # steps:
+    # - uses: actions/checkout@master
+    # - uses: jakejarvis/backblaze-b2-action@master
+      # env:
+        # SOURCE_DIR: './img'
+        # B2_BUCKET: ${{ secrets.B2_BUCKET }}
+        # B2_APPKEY_ID: ${{ secrets.B2_APPKEY_ID }}
+        # B2_APPKEY: ${{ secrets.B2_APPKEY }}
+
+
+name: Sync Images to sm.ms
+
+on:
+  push:
+    paths:
+      - '**.png'
+      - '**.jpg'
+      - '**.jpeg'
+      - '**.gif'
 
 jobs:
-  deploy:
+  upload:
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@master
-    - uses: jakejarvis/backblaze-b2-action@master
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        pip install requests
       env:
-        SOURCE_DIR: './img'
-        B2_BUCKET: ${{ secrets.B2_BUCKET }}
-        B2_APPKEY_ID: ${{ secrets.B2_APPKEY_ID }}
-        B2_APPKEY: ${{ secrets.B2_APPKEY }}
+        SMMS_API_TOKEN: ${{ secrets.SMMS_API_TOKEN }}
+
+    - name: Upload images to sm.ms
+      run: |
+        for file in $(find . -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.gif" \)); do
+          response=$(curl -s -H "Authorization: $SMMS_API_TOKEN" -F "smfile=@$file" https://sm.ms/api/v2/)
+          url=$(echo $response | jq -r '.data.url')
+          echo "Uploaded $file to $url"
+        done
+      env:
+        SMMS_API_TOKEN: ${{ secrets.SMMS_API_TOKEN }}
