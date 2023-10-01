@@ -1,19 +1,3 @@
-# 同步到Backblaze B2 
-# name: Sync B2 Bucket
-# on: push
-
-# jobs:
-  # deploy:
-    # runs-on: ubuntu-latest
-    # steps:
-    # - uses: actions/checkout@master
-    # - uses: jakejarvis/backblaze-b2-action@master
-      # env:
-        # SOURCE_DIR: './img'
-        # B2_BUCKET: ${{ secrets.B2_BUCKET }}
-        # B2_APPKEY_ID: ${{ secrets.B2_APPKEY_ID }}
-        # B2_APPKEY: ${{ secrets.B2_APPKEY }}
-
 
 name: Sync Images to sm.ms
 
