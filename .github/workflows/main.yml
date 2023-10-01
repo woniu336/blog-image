@@ -47,7 +47,7 @@ jobs:
     - name: Upload images to sm.ms
       run: |
         for file in $(find . -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.gif" \)); do
-          response=$(curl -s -H "Authorization: $SMMS_API_TOKEN" -F "smfile=@$file" https://sm.ms/api/v2/)
+          response=$(curl -s -H "Authorization: $SMMS_API_TOKEN" -F "smfile=@$file" https://sm.ms/api/v2/upload)
           url=$(echo $response | jq -r '.data.url')
           echo "Uploaded $file to $url"
         done
