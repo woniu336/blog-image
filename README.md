@@ -29,19 +29,13 @@
 
 > - 存储路径: `img/`   
 
-> - 自定义域名: https://cdn.bilicdn.tk/gh/woniu336/blog-image@main
+> - 自定义域名: https://cdn.jsdelivr.net/gh/woniu336/blog-image@main
 
-<br>
+> - 自定义域名格式: https://cdn.jsdelivr.net/gh/用户名/仓库名@分支
 
+图片测试:
 
-仓库名格式: `用户名/仓库名`
-
-
-自定义域名格式: https://cdn.bilicdn.tk/gh/gh/用户名/仓库名@main
-
-<br>
-
-![](https://cdn.bilicdn.tk/gh/woniu336/blog-image@main/img/202306271738029.webp)
+![](https://cdn.jsdelivr.net/gh/woniu336/blog-image@main/img/202310061243776.jpg)
 
 
 
