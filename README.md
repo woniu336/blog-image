@@ -1,6 +1,16 @@
+
+
 # Github图床使用
 
+网络上关于`GitHub+Jsdelivr`实现`图床加速`的文章很多，但是年代久远，加上Jsdelivr早就被和谐了，所以本人重新整理一下，目前还能使用，无需科学上网的就能加速图片的方法。
 
+>方法1：Jsdelivr镜像站 [https://jsd.cdn.zzko.cn](https://jsd.cdn.zzko.cn/)  （公益）
+
+>方法2：通过`Cloudflare Workers`实现反代
+
+>即使镜像站点跑路了，Cloudflare还在，速度慢点
+
+以上方法都要配合PicGo或者PicList使用，本人使用的是PicList
 
 配合图床工具: [PicList](https://github.com/Kuingsmile/PicList)
 
@@ -13,15 +23,36 @@
 
 官网: https://piclist.cn
 
-<br>
 
-## 注意事项
+### 1.通过Cloudflare Workers实现反代
 
-<br>
+```java
+addEventListener(
+  "fetch",event => {
+     let url=new URL(event.request.url);
+     url.hostname="raw.githubusercontent.com";  //反代github域名
+     let request=new Request(url,event.request);
+     event. respondWith(
+       fetch(request)
+     )
+  }
+)
+```
 
-请替换为你自己的`仓库名` 以及准备好`token`
+具体教程网上很多，需要你在Cloudflare有域名
 
-<br>
+### 2.配合PicList
+
+
+
+请替换为你自己的`仓库名` 以及分支，准备好`token`
+
+反代图
+
+![](https://github.leshans.eu.org/woniu336/blog-image/main/img/2023-12-07_212014.png)
+
+下图为镜像站
+<br>![](https://jsd.cdn.zzko.cn/gh/woniu336/blog-image@main/img/2023-12-07_212014.png)
 
 > - 仓库名: `woniu336/blog-image`
 
@@ -29,10 +60,10 @@
 
 > - 存储路径: `img/`   
 
-> - 自定义域名1: https://jsd.cdn.zzko.cn/gh/woniu336/blog-image@main    （境内站: https://jsd.cdn.zzko.cn）
+> - 自定义域名1(镜像站) :  https://jsd.cdn.zzko.cn/gh/woniu336/blog-image@main 
 
-> - 自定义域名2: https://github.leshans.eu.org/woniu336/blog-image/main  (Cloudflare Workers实现反代)
-
+> - 自定义域名2(CF反代)
+: https://github.leshans.eu.org/woniu336/blog-image/main  
 
 > - 自定义域名格式: https://cdn.jsdelivr.net/gh/用户名/仓库名@分支  
 
