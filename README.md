@@ -52,7 +52,8 @@ addEventListener(
 ![](https://github.leshans.eu.org/woniu336/blog-image/main/img/2023-12-07_212014.png)
 
 下图为镜像站
-<br>![](https://jsd.cdn.zzko.cn/gh/woniu336/blog-image@main/img/2023-12-07_212014.png)
+
+![](https://jsd.cdn.zzko.cn/gh/woniu336/blog-image@main/img/2023-12-07_212014.png)
 
 > - 仓库名: `woniu336/blog-image`
 
@@ -60,7 +61,9 @@ addEventListener(
 
 > - 存储路径: `img/`   
 
-> - 自定义域名1(镜像站) :  https://jsd.cdn.zzko.cn/gh/woniu336/blog-image@main 
+> - 自定义域名1(镜像站) :  
+
+https://jsd.cdn.zzko.cn/gh/woniu336/blog-image@main 
 
 > - 自定义域名2(CF反代)
 : https://github.leshans.eu.org/woniu336/blog-image/main  
