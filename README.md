@@ -2,13 +2,11 @@
 
 # Github图床使用
 
-网络上关于`GitHub+Jsdelivr`实现`图床加速`的文章很多，但是年代久远，加上Jsdelivr早就被和谐了，所以本人重新整理一下，目前还能使用，无需科学上网的就能加速图片的方法。
+方法1：Jsdelivr镜像站 [https://jsd.cdn.zzko.cn](https://jsd.cdn.zzko.cn/)  （公益）
 
->方法1：Jsdelivr镜像站 [https://jsd.cdn.zzko.cn](https://jsd.cdn.zzko.cn/)  （公益）
+方法2：通过`Cloudflare Workers`实现反代
 
->方法2：通过`Cloudflare Workers`实现反代
-
->即使镜像站点跑路了，Cloudflare还在，速度慢点
+即使镜像站点跑路了，Cloudflare还在，速度慢点
 
 以上方法都要配合PicGo或者PicList使用，本人使用的是PicList
 
