@@ -59,12 +59,9 @@ addEventListener(
 
 > - 存储路径: `img/`   
 
-> - 自定义域名1(镜像站) :  
+> - 自定义域名1(镜像站) : https://jsd.cdn.zzko.cn/gh/woniu336/blog-image@main 
 
-https://jsd.cdn.zzko.cn/gh/woniu336/blog-image@main 
-
-> - 自定义域名2(CF反代)
-: https://github.leshans.eu.org/woniu336/blog-image/main  
+> - 自定义域名2(CF反代): https://github.leshans.eu.org/woniu336/blog-image/main  
 
 > - 自定义域名格式: https://cdn.jsdelivr.net/gh/用户名/仓库名@分支  
 
