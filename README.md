@@ -29,13 +29,16 @@
 
 > - 存储路径: `img/`   
 
-> - 自定义域名: https://cdn.jsdelivr.net/gh/woniu336/blog-image@main
+> - 自定义域名1: https://jsd.cdn.zzko.cn/gh/woniu336/blog-image@main    （境内站: https://jsd.cdn.zzko.cn）
 
-> - 自定义域名格式: https://cdn.jsdelivr.net/gh/用户名/仓库名@分支
+> - 自定义域名2: https://github.leshans.eu.org/woniu336/blog-image/main  (Cloudflare Workers实现反代)
+
+
+> - 自定义域名格式: https://cdn.jsdelivr.net/gh/用户名/仓库名@分支  
 
 图片测试:
 
-![](https://cdn.jsdelivr.net/gh/woniu336/blog-image@main/img/202310061243776.jpg)
+![](https://github.leshans.eu.org/woniu336/blog-image/main/img/202310061243776.jpg)
 
 
 
